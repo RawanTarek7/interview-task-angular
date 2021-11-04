@@ -1,0 +1,20 @@
+.contacts .card {
+  margin: 25px 5px 25px 5px;
+}
+h2 {
+  font-size: 55px;
+  margin: 50px;
+}
+
+.contacts {
+  padding: 35px;
+  background-color: teal;
+}
+.career {
+  margin: 75px;
+  height: 50%;
+}
+.footer-copyright a {
+  text-decoration: none;
+  color: black;
+}

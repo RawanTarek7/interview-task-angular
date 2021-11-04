@@ -1,0 +1,110 @@
+<section class="home">
+  <img class="header" alt="" src="../../assets/study.jpeg" />
+  <div class="head">Welcome to our website</div>
+
+  <h2 class="title">Courses</h2>
+  <div class="courses">
+    <div class="row">
+      <div class="col-lg-4" *ngFor="let course of courses">
+        <div class="card">
+          <mat-card class="example-card">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>{{ course.name }}</mat-card-title>
+              <mat-card-subtitle>{{ course.details }}</mat-card-subtitle>
+              <h4>150$</h4>
+            </mat-card-header>
+            <img mat-card-image src="{{ course.img }}" alt="" />
+          </mat-card>
+          <mat-card-actions>
+            <button class="view" mat-raised-button>Enroll Course</button>
+            <button class="view" mat-raised-button>book Mark</button>
+          </mat-card-actions>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <!-- Footer -->
+    <footer class="page-footer font-small blue pt-4">
+      <!-- Footer Links -->
+      <div class="container-fluid text-center text-md-left">
+        <!-- Grid row -->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-4 mt-md-0 mt-3">
+            <!-- Content -->
+            <h5 class="footer-details">Footer Content</h5>
+            <p>
+              e-learning and professional people development network serving the
+              Middle East and Africa. Offering video courses and
+              motivational/informative talks in Arabic and English.
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="clearfix w-100 d-md-none pb-3" />
+
+          <!-- Grid column -->
+          <div class="col-md-4 mb-md-0 mb-3">
+            <!-- Links -->
+            <h5 class="footer-details">Weather</h5>
+            <div
+              class="weatherWidgetRow"
+              style="font-size: 25px; margin-top: 10px"
+            >
+              {{ weatherData.name }}
+            </div>
+            <div
+              class="weatherWidgetRow"
+              style="font-size: 32px; margin-top: 5px"
+            >
+              {{ weatherData.temp_celcius }}°
+            </div>
+            <div class="weatherWidgetRow" style="font-size: 12px">
+              {{ weatherData.temp_min }}° / {{ weatherData.temp_max }}°
+            </div>
+            <div class="weatherWidgetRow" style="font-size: 12px">
+              Feels Like: {{ weatherData.temp_feels_like }}°
+            </div>
+
+            <div class="weatherWidgetRow" style="font-size: 12px">
+              Humidity: {{ weatherData.main.humidity }}%
+            </div>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+
+          <div class="col-md-4 mb-md-0 mb-3">
+            <h5 class="footer-details">contacts</h5>
+
+            <!-- Links -->
+
+            <div class="row">
+              <div class="col-lg-4" *ngFor="let app of social">
+                <div class="contact">
+                  <a href="{{ app.link }}" target="blank"
+                    ><img src="{{ app.img }}"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+      <!-- Footer Links -->
+
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">
+        © 2020 Copyright:
+        <a href="#"> RawanTarek.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+  </div>
+</section>

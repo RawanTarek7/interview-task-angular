@@ -1,0 +1,87 @@
+.home .header {
+  width: 100%;
+  height: 80vh;
+  object-position: center;
+  object-fit: cover;
+  filter: blur(4px);
+}
+
+.home img {
+  width: 100%;
+  height: 230px;
+
+  object-fit: cover;
+}
+.home .head {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 60px;
+  font-weight: 600;
+  margin-top: 10px;
+  color: black;
+  filter: drop-shadow(1px 1px 17px white);
+}
+.home h1 {
+  object-position: center;
+}
+.home h4 {
+  margin: auto;
+}
+.home mat-card-actions {
+  margin: auto;
+}
+
+.home button {
+  margin: 5px;
+}
+
+.home .card {
+  margin: 20px;
+  cursor: pointer;
+}
+.home .card:hover {
+  transform: scale(1.08);
+}
+.home .title {
+  font-size: 40px;
+  padding: 25px;
+}
+.home mat-card-title {
+  font-size: 30px;
+}
+
+.home .courses {
+  padding: 25px;
+}
+.home .contact img {
+  width: 35px;
+  height: 35px;
+}
+
+.home .footer {
+  padding: 40px 0 40px 0;
+  background-color: teal;
+  color: whitesmoke;
+}
+.home .footer .footer-details {
+  font-weight: 600;
+  font-size: 17px;
+  margin-bottom: 25px;
+}
+.home .view:hover .home .view:focus {
+  box-shadow: inset 6.5em 0 0 0 var(--hover);
+}
+.footer a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.weatherWidgetRow {
+  display: block;
+  margin: 0 auto;
+  padding: 5px;
+  width: fit-content;
+  filter: drop-shadow(1px 1px 10px white);
+}
